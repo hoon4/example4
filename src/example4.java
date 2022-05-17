@@ -18,7 +18,7 @@ public class example4 {
                 System.out.print("[시스템] 유튜브 계정의 비밀번호를 입력하세요{Ex - 0000} : ");
                 user_pw = sc.nextLine();
                 if(admin_id.equals(user_id) && admin_pw.equals(user_pw)) {        // 관리자 로그인정보가 일치하는 경우
-                    System.out.println("[안내] 안녕하세요 admin님.");
+                    System.out.println("[안내] 안녕하세요 admin님.");                  // [pair review] 루프 안에는 id/pw 입력 기능만 들어가는게 깔끔할 것 같아요
                     System.out.println("[안내] 유튜브 영상의 자막을 생성해 주세요.");
                     break;
                 }
@@ -32,7 +32,7 @@ public class example4 {
         System.out.println("[알림] 프로그램의 금칙어 리스트입니다.");
 
         for(int i = 0; i < no_words.length; i++) {              // 금칙어 리스트 출력
-            System.out.print(no_words[i] + ", ");
+            System.out.print(no_words[i] + ", ");               // [pair review] 콜론찍는거 수정
         }
         System.out.println();
         System.out.println("========================================");
